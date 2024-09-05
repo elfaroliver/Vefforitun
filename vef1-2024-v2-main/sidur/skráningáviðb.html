@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" >
+    <title>Skráning hafin!</title>
+    <meta name="description" content="" >
+  </head>
+  <body>
+    <h1>Velkomin á viðburðaskráningu Spilabúðarinnar</h1>
+    <p><a href="#efni">Beint í efni</a></p>
+    <h2><a href="spil.html">Spilasíðan</a></h2>
+    <h2><a href="/vef1-2024-v2-main/index.html">Forsíða</a></h2>
+    <h2><a href="viðburðir.html">Viðburðir</a></h2>
+    <p>Skráðu þig á viðburði hjá okkur!</p>
+    <!-- HTML Meta Tags -->
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://charming-tanuki-94efea.netlify.app/"
+    >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="Spilabúðin!" >
+    <meta property="og:description" content="" >
+    <meta property="og:image" content="" >
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" >
+    <meta
+      property="twitter:domain"
+      content="charming-tanuki-94efea.netlify.app"
+    >
+    <meta
+      property="twitter:url"
+      content="https://charming-tanuki-94efea.netlify.app/"
+    >
+    <meta property="twitter:title" content="Spilabúðin!" >
+    <meta property="twitter:description" content="" >
+    <meta property="twitter:image" content="" >
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+    <main id="efni">
+      <form action="/submit" method="input">
+      <h1>Skráning á viðburði</h1>
+      <h3>Viðburður</h3>
+      <p>Hvaða viðburð viltu koma á:</p>
+      <div class="event-container">
+        <label for="event">Viðburðir:</label>
+        <select name="event" id="event">
+          <option value="Púslukvöld">Púslukvöld</option>
+          <option value="Ticket to Ride">Ticket to Ride</option>
+        </select>
+      </div>
+      <div class="time-container">
+        <label for="time">Klukkan hvað:</label>
+        <select id="time" name="time">
+          <option value="10:00-11:00">10:00-11:00</option>
+          <option value="11:00-12:00">11:00-12:00</option>
+          <option value="12:00-13:00">12:00-13:00</option>
+          <option value="13:00-14:00">13:00-14:00</option>
+          <option value="14:00-15:00">14:00-15:00</option>
+          <option value="15:00-16:00">15:00-16:00</option>
+          <option value="16:00-17:00">16:00-17:00</option>
+          <option value="17:00-18:00">17:00-18:00</option>
+          <option value="18:00-19:00">18:00-19:00</option>
+          <option value="19:00-20:00">19:00-20:00</option>
+          <option value="20:00-21:00">20:00-21:00</option>
+          <option value="21:00-22:00">21:00-22:00</option>
+          <option value="22:00-23:00">22:00-23:00</option>
+          <option value="23:00-00:00">23:00-00:00</option>
+        </select>
+      </div>
+      <label for="fjöldi">Hve mörg:</label>
+      <select id="fjöldi" name="fjöldi">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <div class="comment-container">
+      <label for="comment">Viltu taka eitthvað fram:</label>
+      <textarea name="comment" id="comment"></textarea>
+      </div>
+      <h3>Panta mat</h3>
+      <div class="matur-container">
+        <label for="matur">Matur</label>
+        <select name="matur" id="matur">
+          <option value="pizza">Pizzusneið og gos</option>
+          <option value="kaffi">Kaffi og kaka</option>
+          <option value="ekkert">Engan mat</option>
+        </select>
+      </div>
+      <div class="allergy-container">
+        <label for="allergy">Ofnæmi</label>
+        <input type="checkbox" name="allergy" id="allergy">
+      </div>
+      <div class="meira-container">
+        <label for="meira">Annað sem við eigum að vita?</label>
+        <textarea name="meira" id="meira" required></textarea>
+      </div>
+      <section class="information-container">
+      <h3>Þínar upplýsingar</h3>
+        <label for="name">Nafn</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Netfang</label>
+        <input type="email" id="email" name="email" placeholder="dæmi@dæmi.is" required>
+
+        <label for="phone">Sími</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-4567" required>
+      </section>
+      <h3>Samþykkja og panta</h3>
+      <div class="skilmalar-container">
+        <label for="skilmalar">Samþykkir þú skilmála Spilabúðarinnar?</label>
+        <input type="checkbox" id="skilmalar" name="skilmalar" required>
+      </div>
+      <div class="order-button-container">
+        <button type="submit">Panta</button>
+      </div>
+      </section>
+      </form>
+    </main>
+    <footer>
+      <h2>Opnunartímar</h2>
+      <h4>Mánudagar</h4>
+      <p>Lokað</p>
+      <h4>Þriðjudagar til fimmtudags</h4>
+      <p>14:00–22:00</p>
+      <h4>Föstudaga</h4>
+      <p>14:00–00:00</p>
+      <h4>Laugardaga</h4>
+      <p>12:00–00:00</p>
+      <h4>Sunnudaga</h4>
+      <p>12:00–22:00</p>
+
+      <h2>Hér erum við</h2>
+      <p>Spilabúðin ehf.</p>
+      <p>Spilagata 1</p>
+      <p>101 Reykjavík</p>
+      <p>Sími 123-4567</p>
+      <p>spilabudin@example.org</p>
+
+      <h2>Samfélagsmiðlar</h2>
+      <p><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></p>
+      <p><a href="https://www.youtube.com/user/HIvarp">YouTube</a></p>
+      <p><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></p>
+    </footer>
+  </body>
+</html>
